@@ -3,7 +3,7 @@
 namespace SendPulse\SendPulseLaravel;
 
 use Illuminate\Support\ServiceProvider;
-use SendPulse\SendpulseApi;
+
 
 class SendPulseLaravelServiceProvider extends ServiceProvider
 {
