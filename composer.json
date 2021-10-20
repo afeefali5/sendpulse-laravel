@@ -12,10 +12,6 @@
   "require": {
     "sendpulse/rest-api": "^1.0"
   },
-  "require-dev": {
-    "phpunit/phpunit": "~4.0",
-    "mockery/mockery": "0.9.*"
-  },
   "autoload": {
     "psr-4": {
       "SendPulse\\SendPulseLaravel\\": "src/"
