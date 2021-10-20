@@ -23,7 +23,7 @@ available methods.
     Note, this will also install the required wensleydale/sendpulse-rest-api-php package.
 
     ```shell
-    $ composer require wensleydale/sendpulse-laravel:1.*
+     composer require afeefali5/sendpulse-laravel
     ```
 
 2. Update 'config/app.php'

@@ -2,8 +2,9 @@
 
 namespace SendPulse\SendPulseLaravel;
 
-use Illuminate\Support\ServiceProvider;
-
+use Illuminate\Support\ServiceProvider;;
+use Sendpulse\RestApi\ApiClient;
+use Sendpulse\RestApi\Storage\FileStorage;
 
 class SendPulseLaravelServiceProvider extends ServiceProvider
 {
@@ -37,7 +38,7 @@ class SendPulseLaravelServiceProvider extends ServiceProvider
 
             $config = $app['config']['sendpulse'];
 
-            return (new SendpulseApi($config['apiUserId'], $config['apiSecret'], $config['tokenStorage']));
+            return (new ApiClient($config['apiUserId'], $config['apiSecret'], $config['tokenStorage']));
         });
     }
 
